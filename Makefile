@@ -31,7 +31,7 @@ test-abcl:
 	abcl --load test/run.lisp
 
 ci:
-	$(LISP) --load test/run.lisp
+	CI=t $(LISP) --load test/run.lisp
 
 # Documentation ---------------------------------------------------------------
 $(apidocs): $(sourcefiles)
