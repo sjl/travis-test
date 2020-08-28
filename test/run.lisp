@@ -9,4 +9,4 @@
 (ql:quickload 'cl-digraph.test :verbose t)
 (format t "hello 3")
 (time (asdf:test-system 'cl-digraph))
-(cl-user::quit)
+(uiop:quit)
