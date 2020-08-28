@@ -1,7 +1,7 @@
 #+ecl (setf compiler:*user-cc-flags* "-Wno-shift-negative-value")
 
-(when (uiop:getenv "CI")
-  #+sbcl (sb-ext:disable-debugger))
+;; (when (uiop:getenv "CI")
+;;   #+sbcl (sb-ext:disable-debugger))
 (setf *debugger-hook*
       (lambda (e dh)
         (format t "~A" e)
