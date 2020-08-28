@@ -30,6 +30,9 @@ test-abcl:
 	$(heading_printer) broadway 'ABCL'
 	abcl --load test/run.lisp
 
+ci:
+	$(LISP) --load test/run.lisp
+
 # Documentation ---------------------------------------------------------------
 $(apidocs): $(sourcefiles)
 	sbcl --noinform --load docs/api.lisp  --eval '(quit)'
