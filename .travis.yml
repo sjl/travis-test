@@ -1,8 +1,9 @@
 language: common-lisp
 
 env:
-  matrix:
+  jobs:
     - LISP=sbcl
+    - LISP=ccl
 
 install:
   - curl https://raw.githubusercontent.com/luismbo/cl-travis/master/install.sh | bash
