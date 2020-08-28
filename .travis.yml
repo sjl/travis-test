@@ -4,6 +4,7 @@ env:
   jobs:
     - LISP=sbcl
     - LISP=ccl
+    - LISP=ecl
 
 install:
   - curl https://raw.githubusercontent.com/luismbo/cl-travis/master/install.sh | bash
