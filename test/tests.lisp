@@ -37,7 +37,7 @@
   (let ((g (make-digraph :initial-vertices '(a b c)))
         (h nil))
     (insert-edge g 'a 'b)
-    (is (same '(a b c) (vertices g)))
+    (is (same '(a b c d) (vertices g)))
     (is (same '((a . b)) (edges g)))
     (setf h (copy-digraph g))
     (is (same '(a b c) (vertices h)))
