@@ -6,6 +6,7 @@ env:
 
 install:
   - curl https://raw.githubusercontent.com/luismbo/cl-travis/master/install.sh | bash
+  - git clone https://github.com/sjl/1am.git ~/lisp/1am
 
 script:
   - cl -e '(load "test/run.lisp")'
